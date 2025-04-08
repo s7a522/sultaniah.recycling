@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +12,14 @@
             color: #333;
         }
 
+        /* تصميم الشريط العلوي (Navbar) */
         .navbar {
-            background-color: #343a40;
+            background-color: #3E8E41; /* الأخضر المائل للبني */
         }
 
         .navbar-brand img {
-            height: 60px;
+            height: 100px; /* تكبير الشعار */
+            width: auto;
         }
 
         .navbar-nav .nav-link {
@@ -26,9 +27,10 @@
         }
 
         .navbar-nav .nav-link:hover {
-            color: #ffcc00 !important;
+            color: #FFB000 !important; /* الذهبي */
         }
 
+        /* القسم الرئيسي (Hero) */
         .hero {
             background: url('images/hero-bg.jpg') no-repeat center center;
             background-size: cover;
@@ -41,12 +43,13 @@
             font-size: 2.5rem;
         }
 
+        /* الأقسام المختلفة */
         .section {
             padding: 60px 0;
         }
 
         .section h2 {
-            color: #ffcc00;
+            color: #FFB000; /* الذهبي */
             font-size: 2rem;
         }
 
@@ -55,16 +58,9 @@
             font-size: 1.2rem;
         }
 
-        .gallery-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
+        /* الفوتر (Footer) */
         footer {
-            background-color: #343a40;
+            background-color: #3E8E41;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -73,232 +69,66 @@
         footer p {
             margin: 5px 0;
         }
-
-        .video-container {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .video-container video {
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .contact-info ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .contact-info a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
     </style>
 </head>
-
 <body>
 
-    <!-- Language Toggle Button -->
-    <div class="container text-center mt-3 lang-toggle-button">
-        <button class="btn btn-primary" id="lang-toggle">English</button>
-    </div>
-
-    <!-- Arabic Content -->
-    <div id="arabic-content">
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="شعار دار السلطانية">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">الخدمات</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">معرض الصور</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
-                    </ul>
-                </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/الشعار.png" alt="شعار دار السلطانية"> <!-- الشعار مع إزالة الخلفية -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">رؤيتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="licenses.html">التصاريح</a></li>
+                </ul>
             </div>
-        </nav>
-
-        <header class="hero text-center">
-            <div class="container">
-                <h1 class="display-4 fw-bold">دار السلطانية لإعادة التدوير</h1>
-                <p class="lead">خبرة تزيد عن 30 عامًا في جمع وإعادة تدوير سكراب الورق</p>
-            </div>
-        </header>
-
-        <section class="section bg-white text-center">
-            <div class="container">
-                <h2>خدماتنا</h2>
-                <p class="mb-5">نقدم حلولاً متكاملة واحترافية في جمع وإعادة تدوير سكراب الورق.</p>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/service1.jpg" class="gallery-img" alt="جمع الورق">
-                        <h4 class="mt-3">جمع الورق</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/service2.jpg" class="gallery-img" alt="فرز وتدوير">
-                        <h4 class="mt-3">فرز وتدوير</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/service3.jpg" class="gallery-img" alt="خدمة النقل">
-                        <h4 class="mt-3">خدمة النقل</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="video-container">
-            <h2>فرم الأوراق الرسمية</h2>
-            <video controls>
-                <source src="images/فيديو للفرم بدون صوت.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
         </div>
+    </nav>
 
-        <section class="section bg-light text-center contact-info">
-            <div class="container">
-                <h2>اتصل بنا</h2>
-                <p class="mb-5">إذا كان لديك أي استفسار أو طلب، لا تتردد في الاتصال بنا عبر البريد الإلكتروني أو الهاتف:</p>
-                <div>
-                    <p><strong>الإيميلات:</strong></p>
-                    <ul>
-                        <li><a href="mailto:emad1@sultaniah.com">emad1@sultaniah.com (الإدارة - عماد البوادي)</a></li>
-                        <li><a href="mailto:sale7@sultaniah.com">sale7@sultaniah.com</a></li>
-                        <li><a href="mailto:mostafa@sultaniah.com">mostafa@sultaniah.com</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p><strong>أرقام الهاتف:</strong></p>
-                    <ul>
-                        <li>0504230005</li>
-                        <li>0547326450</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <p>العنوان: حي السلي - الرياض - المملكة العربية السعودية</p>
-                <p>جوال: 0504230005 | 0547326450</p>
-                <p>البريد الإلكتروني: emad1@sultaniah.com</p>
-                <p>جميع الحقوق محفوظة &copy; دار السلطانية لإعادة التدوير 2025</p>
-            </div>
-        </footer>
-    </div>
-
-    <!-- English Content -->
-    <div id="english-content" style="display: none;">
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="Sultaniah Recycling Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <header class="hero text-center">
-            <div class="container">
-                <h1 class="display-4 fw-bold">Sultaniah Recycling</h1>
-                <p class="lead">Over 30 years of experience in paper scrap collection and recycling.</p>
-            </div>
-        </header>
-
-        <section class="section bg-white text-center">
-            <div class="container">
-                <h2>Our Services</h2>
-                <p class="mb-5">We provide integrated and professional solutions for collecting and recycling paper scrap.</p>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/service1.jpg" class="gallery-img" alt="Paper Collection">
-                        <h4 class="mt-3">Paper Collection</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/service2.jpg" class="gallery-img" alt="Sorting and Recycling">
-                        <h4 class="mt-3">Sorting and Recycling</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/service3.jpg" class="gallery-img" alt="Transportation Service">
-                        <h4 class="mt-3">Transportation Service</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="video-container">
-            <h2>Shredding Official Papers</h2>
-            <video controls>
-                <source src="images/فيديو للفرم بدون صوت.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">دار السلطانية لإعادة التدوير</h1>
+            <p class="lead">خبرة تزيد عن 30 عامًا في جمع وإعادة تدوير سكراب الورق</p>
         </div>
+    </header>
 
-        <section class="section bg-light text-center contact-info">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p class="mb-5">If you have any inquiries or requests, feel free to contact us via email or phone:</p>
-                <div>
-                    <p><strong>Emails:</strong></p>
-                    <ul>
-                        <li><a href="mailto:emad1@sultaniah.com">emad1@sultaniah.com (Management - Emad Al-Bawadi)</a></li>
-                        <li><a href="mailto:sale7@sultaniah.com">sale7@sultaniah.com</a></li>
-                        <li><a href="mailto:mostafa@sultaniah.com">mostafa@sultaniah.com</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p><strong>Phone Numbers:</strong></p>
-                    <ul>
-                        <li>0504230005</li>
-                        <li>0547326450</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <!-- من نحن -->
+    <section class="section bg-white text-center">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>في **دار السلطانية لإعادة التدوير**، نلتزم بتقديم حلول مبتكرة ومستدامة في مجال جمع وإعادة تدوير سكراب الورق. تأسست شركتنا منذ أكثر من 30 عامًا، ونحن فخورون بتاريخنا الطويل في تقديم خدمات عالية الجودة وذات تأثير بيئي إيجابي. نحن نعتبر إعادة التدوير أكثر من مجرد عملية صناعية، بل هي مسؤولية اجتماعية وبيئية نتحملها بكل فخر.</p>
+            <p>نستخدم أحدث التقنيات والآلات في صناعة إعادة التدوير لضمان معالجة المواد بشكل فعال وآمن، مما يساهم في تقليل تأثير النفايات على البيئة. فريقنا المتخصص يسعى دائمًا للابتكار في أساليب العمل لضمان الجودة والاستدامة. بالإضافة إلى ذلك، نحرص على العمل عن كثب مع عملائنا لفهم احتياجاتهم وتحقيق أعلى مستوى من الرضا.</p>
+            <p>نؤمن بأن استدامة البيئة تبدأ بخطوات صغيرة، ولكن مع التزامنا وإصرارنا، يمكننا إحداث تأثير كبير. نحن نعمل في دار السلطانية على تمكين مجتمعنا من خلال تقديم حلول فعالة لإعادة التدوير، وبالتالي تقليل حجم النفايات وتعزيز الاقتصاد الأخضر.</p>
+        </div>
+    </section>
 
-        <footer>
-            <div class="container">
-                <p>Address: Al-Sulay, Riyadh, Saudi Arabia</p>
-                <p>Phone: 0504230005 | 0547326450</p>
-                <p>Email: emad1@sultaniah.com</p>
-                <p>&copy; 2025 Sultaniah Recycling. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
+    <!-- رؤيتنا -->
+    <section class="section bg-light text-center">
+        <div class="container">
+            <h2>رؤيتنا</h2>
+            <p>نسعى في **دار السلطانية لإعادة التدوير** أن نكون الشركة الرائدة في مجال إعادة التدوير على مستوى المملكة العربية السعودية، من خلال تقديم حلول مبتكرة ومستدامة في صناعة إعادة تدوير الورق. نهدف إلى إحداث تغيير حقيقي في المجتمع من خلال تعزيز الوعي البيئي وتقديم خدمات تقلل من الأثر البيئي للنفايات الورقية.</p>
+            <p>رؤيتنا المستقبلية تتمثل في تحقيق الاستدامة من خلال تحسين تقنياتنا وتوسيع نطاق عملنا ليشمل إعادة تدوير مواد أخرى بجانب الورق، وذلك لتحقيق أقصى استفادة من الموارد المتاحة وتقليل الفاقد. نحن نركز على أن تكون خدماتنا متوافقة مع أعلى المعايير البيئية العالمية، في سبيل بناء بيئة أكثر صحة ونظافة للمستقبل.</p>
+            <p>كما نطمح إلى أن نكون جزءًا من الحلول البيئية العالمية، والمساهمة في تحقيق أهداف التنمية المستدامة للأمم المتحدة. نحن نؤمن بأن العمل الجماعي وتوحيد الجهود بين الشركات والمجتمع سيؤدي إلى تحقيق نتائج إيجابية يمكن أن يستفيد منها الجميع. من خلال الابتكار والمثابرة، نرى مستقبلًا أكثر إشراقًا حيث تصبح ممارسات إعادة التدوير جزءًا من أسلوب حياة الجميع.</p>
+        </div>
+    </section>
 
-    <script>
-        document.getElementById("lang-toggle").onclick = function() {
-            var arabicContent = document.getElementById("arabic-content");
-            var englishContent = document.getElementById("english-content");
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; دار السلطانية لإعادة التدوير 2025</p>
+        </div>
+    </footer>
 
-            if (arabicContent.style.display === "none") {
-                arabicContent.style.display = "block";
-                englishContent.style.display = "none";
-                this.innerText = "English";
-            } else {
-                arabicContent.style.display = "none";
-                englishContent.style.display = "block";
-                this.innerText = "العربية";
-            }
-        };
-    </script>
 </body>
 </html>
