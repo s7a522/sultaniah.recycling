@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات دار السلطانية لإعادة التدوير</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* تصميم الشريط العلوي (Navbar) */
+        .navbar {
+            background-color: #3E8E41; /* الأخضر المائل للبني */
+        }
+
+        .navbar-brand img {
+            height: 100px; /* تكبير الشعار */
+            width: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFB000 !important; /* الذهبي */
+        }
+
+        /* القسم الخاص بالخدمات */
+        .services-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .services-section h2 {
+            text-align: center;
+            color: #FFB000;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-item h4 {
+            color: #3E8E41;
+            margin-top: 15px;
+        }
+
+        .service-item p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* الفيديو في قسم فرم الأوراق الرسمية */
+        .video-section {
+            background-color: #f0f0f0;
+            padding: 60px 0;
+        }
+
+        .video-section h3 {
+            color: #FFB000;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        /* الفوتر (Footer) */
+        footer {
+            background-color: #3E8E41;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/الشعار.png" alt="شعار دار السلطانية"> <!-- الشعار مع إزالة الخلفية -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">رؤيتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="licenses.html">التصاريح</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- خدماتنا -->
+    <section class="services-section">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="row">
+                <!-- خدمة جمع الورق -->
+                <div class="col-md-4 service-item">
+                    <img src="images/service1.jpg" alt="جمع الورق">
+                    <h4>جمع الورق</h4>
+                    <p>نقوم بجمع الورق من مختلف الأماكن مثل المدارس، الشركات والمصانع لضمان إعادة تدويره بشكل فعّال وآمن.</p>
+                </div>
+
+                <!-- خدمة فرز وتدوير الورق -->
+                <div class="col-md-4 service-item">
+                    <img src="images/service2.jpg" alt="فرز وتدوير">
+                    <h4>فرز وتدوير</h4>
+                    <p>نقوم بفرز الورق وتحويله إلى منتجات جديدة باستخدام تقنيات حديثة تساهم في الحفاظ على البيئة.</p>
+                </div>
+
+                <!-- خدمة فرم الأوراق الرسمية -->
+                <div class="col-md-4 service-item">
+                    <img src="images/service3.jpg" alt="فرم الأوراق الرسمية">
+                    <h4>فرم الأوراق الرسمية</h4>
+                    <p>نقدم خدمة فرم الأوراق الرسمية بأعلى معايير الأمان للحفاظ على سرية البيانات والمعلومات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفيديو: فرم الأوراق الرسمية -->
+    <section class="video-section">
+        <div class="container">
+            <h3>شاهد كيف نقوم بفرم الأوراق الرسمية</h3>
+            <div class="video-container text-center">
+                <video width="100%" controls>
+                    <source src="images/فرم_الأوراق_الرسمية.mp4" type="video/mp4">
+                    متصفحك لا يدعم الفيديو.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; دار السلطانية لإعادة التدوير 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
